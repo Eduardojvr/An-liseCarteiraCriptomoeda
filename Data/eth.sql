@@ -1,0 +1,11 @@
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('19/05/2021 09:36:27', 'R$ 13.699,99', '0,0036 ETH','0,0036 ETH','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('17/05/2021 14:53:08', 'R$ 16.800,00', '0,0029 ETH','0,0029 ETH','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('13/05/2021 12:13:08', 'R$ 20.399,98', '0,0021 ETH','0,0021 ETH','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('12/05/2021 22:03:06', 'R$ 21.000,00', '0,0059 ETH','0,0059 ETH','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('26/04/2021 13:37:15', 'R$ 13.753,67', '0,0018 ETH','0,0018 ETH','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('22/04/2021 11:15:51', 'R$ 14.289,96', '0,0024 ETH','0,0023 ETH','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('07/04/2021 14:37:38', 'R$ 11.389,99', '0,0105 ETH','0,0104 ETH','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('21/12/2020 08:53:51', 'R$ 3.149,89', '0,0050 ETH','0,0050 ETH','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('07/07/2020 22:24:12', 'R$ 1.281,78', '0,0060 ETH','R$ 7,66','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('06/07/2020 13:19:36', 'R$ 1.264,67', '0,0020 ETH','R$ 2,52','finalizada');
+insert into extrato (data, valordiacompra, qtdCompraVenda, qtdValorCompraVenda, status) values ('29/06/2020 15:23:38', 'R$ 1.235,95', '0,0080 ETH','0,0080 ETH','finalizada');

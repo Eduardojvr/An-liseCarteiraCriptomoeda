@@ -1,19 +1,19 @@
 -- ***********************************************************************************************************
--- 											Análises BITCOIN
+-- 											Análises ETHEREUM
 -- ***********************************************************************************************************
 
 -- 
--- Valor Médio bitcoin
+-- Valor Médio ETHEREUM
 --
 select  sum(cast(replace(replace(valordiacompra, 'R$',''),'.','') as decimal))/(select count(*) from extrato e
 																					inner join criptomoedas c2 
 																						on DATE_FORMAT(str_to_date (e.data, '%d/%m/%Y %T'), '%Y-%m-%d %T')  = c2.data
-																				where c2.Quantidade > 0 and e.qtdCompraVenda like '%BTC%'
+																				where c2.Quantidade > 0 and e.qtdCompraVenda like '%ETH%'
 																				) as 'Preço médio'
 	from extrato e
 		inner join criptomoedas c2 
 			on DATE_FORMAT(str_to_date (e.data, '%d/%m/%Y %T'), '%Y-%m-%d %T')  = c2.data
-where c2.Quantidade > 0	and e.qtdCompraVenda like '%BTC%'
+where c2.Quantidade > 0	and e.qtdCompraVenda like '%ETH%'
 
 
 
@@ -29,19 +29,19 @@ select
 		-- 		and year(cast(c.`Data` as datetime)) = 2021
 
 -- 	
--- Qtd de bitcoin atual
+-- Qtd de ETHEREUM atual
 -- 
-	select sum(quantidade) from criptomoedas c where Moeda = 'BTC'
+	select sum(quantidade) from criptomoedas c where Moeda = 'ETH'
 
 -- 
--- Valor desembolsado/investido em bitcoin
+-- Valor desembolsado/investido em ETHEREUM
 -- 
 select sum(t.`R$ Gasto`) as 'R$ Gasto' from(
 	select c2.*, cast(replace(replace(valordiacompra, 'R$',''),'.','') as decimal) * c2.Quantidade as 'R$ Gasto'
 		from extrato e
 			inner join criptomoedas c2 
 				on DATE_FORMAT(str_to_date (e.data, '%d/%m/%Y %T'), '%Y-%m-%d %T')  = c2.data
-	where c2.Quantidade > 0 and e.qtdCompraVenda like '%BTC%'
+	where c2.Quantidade > 0 and e.qtdCompraVenda like '%ETH%'
 ) as t
 
 
