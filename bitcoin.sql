@@ -45,7 +45,7 @@ select sum(t.`R$ Gasto`) as 'R$ Gasto' from(
 ) as t
 
 -- 
--- Valor lucro ETHEREUM (SEMPRE ATUALIZAR O VALOR ATUAL DO ETH)
+-- Valor lucro BITCOIN (SEMPRE ATUALIZAR O VALOR ATUAL DO BITCOIN)
 -- 
 set @val = (
 	select sum(t.`R$ Gasto`) as 'R$ Gasto' from(
